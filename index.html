@@ -21,6 +21,22 @@
       --text: #2a3d30;
       --card: #ffffff;
       --border: rgba(126,203,143,0.3);
+      --nav-bg: rgba(240,250,242,0.85);
+      --dim: #4a6050;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1a12;
+        --text: #e0f0e5;
+        --card: #162019;
+        --border: rgba(126,203,143,0.15);
+        --nav-bg: rgba(15,26,18,0.85);
+        --dim: #7aaa85;
+        --green-dark: #5ab870;
+        --blue-dark: #6aaee0;
+        --yellow-light: #3a3010;
+      }
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -67,7 +83,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(240,250,242,0.85);
+      background: var(--nav-bg);
       backdrop-filter: blur(10px);
       border-bottom: 2px solid var(--border);
     }
@@ -107,7 +123,7 @@
     .hero-tag {
       display: inline-block;
       background: var(--yellow);
-      color: var(--text);
+      color: #8a6800;
       font-weight: 800;
       font-size: 0.8rem;
       letter-spacing: 0.1em;
@@ -162,7 +178,7 @@
 
     .coming-soon-bubble {
       background: var(--yellow);
-      color: var(--text);
+      color: #8a6800;
       font-family: 'Fredoka One', cursive;
       font-size: 1.1rem;
       padding: 0.8rem 2rem;
@@ -346,7 +362,7 @@
 
     /* DEEB LINK */
     .deeb-bar {
-      background: var(--text);
+      background: #0d1a0f;
       color: white;
       text-align: center;
       padding: 1.5rem 2rem;
@@ -367,7 +383,7 @@
 
     /* FOOTER */
     footer {
-      background: var(--text);
+      background: #0d1a0f;
       color: rgba(255,255,255,0.5);
       text-align: center;
       padding: 2rem;
@@ -522,7 +538,7 @@
     <div class="about-card fade-in">
       <div class="about-text">
         <h3>New apartment. New chaos.</h3>
-        <p>The Noob Show follows Noobie and G as they settle into their new life as roommates at apartment 317. One charges in headfirst. One just wants a nap. Together they navigate the everyday chaos of adult life — the stuff nobody teaches you — and somehow figure it out one episode at a time.</p>
+        <p>The Noob Show follows Noobie and G as they settle into their new life as roommates at apartment 317, 6 Rowalk Way. One charges in headfirst. One just wants a nap. Together they navigate the everyday chaos of adult life — the stuff nobody teaches you — and somehow figure it out one episode at a time.</p>
         <p style="margin-top:1rem;">The show isn't aimed at kids, but if they watch it the worst that'll happen is they become a bit like G. An original hand-animated series by noobie, part of the DEEB family. Coming to YouTube.</p>
       </div>
       <div class="about-stats">
